@@ -42,18 +42,19 @@
     <div class="content flex-center">
         <div class="description">
             <!-- Keep loving. Keep learning. -->
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script type="text/javascript" src="jquery.min.js"></script>
+            <script type="text/javascript" src="typed.js"></script>
             <script>
-            import Typed from 'typed.js';
-            var options = {
-                strings: [' Keep loving. Keep learning.'],
-                typeSpeed: 120, //打印的速度。数值越大，速度越慢
-                loop: true, //开启循环
-                loopCount: Infinity, //设置循环次数，值为：Infinity，也可以使用数值
-                backSpeed: 20, //延迟时间后才后退，值越大，延迟的时间就越长
-                cursorChar: '^' //光标的符号，比如：
-            };
-            var typed = new Typed('#description', options);
+                var typed = new Typed('.typewriter-content',{
+      // 注意：输出的可以是标签,将标签当节点运行.比如下面的h1
+	  // 这是一个字符串数组,可以填充多个值,使用引号修饰,使用逗号分割
+                strings: ['<h1>{{ theme.style.first_screen.description }}<h1>'],
+	  // 速度值越小打字速度越快
+                typeSpeed:80,
+	  // 用于在在输出字符结尾闪烁的符号
+	            cursorChar: '_'
+                });
+   // 设置页面加载完成时再开始打字
             </script>
         </div>
         
