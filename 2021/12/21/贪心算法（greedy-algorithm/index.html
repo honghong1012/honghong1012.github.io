@@ -218,7 +218,7 @@
 <li>贪心算法跑过测试用例即可，或自圆其说  </li>
 </ul>
 <h1 id="贪心一般解题步骤"><a href="#贪心一般解题步骤" class="headerlink" title="贪心一般解题步骤"></a>贪心一般解题步骤</h1><ul>
-<li>将原本问题分解为若干字问题</li>
+<li>将原本问题分解为若干子问题</li>
 <li>找出适合的贪心策略</li>
 <li>求出每个子问题最优解</li>
 <li>将局部最优解堆叠成全局最优解</li>
@@ -231,6 +231,19 @@
 <li>时间复杂度 O(n)</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">find</span>(<span class="params">self, g:<span class="type">List</span>[<span class="built_in">int</span>], s:<span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        g.sort() <span class="comment"># 先进行升序排列</span></span><br><span class="line">        s.sort()</span><br><span class="line">        index = <span class="number">0</span> <span class="comment"># 利用cookies下标代替两层for循环</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(s)):</span><br><span class="line">            <span class="keyword">if</span> index &lt; <span class="built_in">len</span>(g) <span class="keyword">and</span> s[i] &gt;= g[index]: <span class="comment"># ！满足的标准和下标移动</span></span><br><span class="line">                index += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> index</span><br></pre></td></tr></table></figure>
+
+<h2 id="376-摆动序列（wiggle-subsequence"><a href="#376-摆动序列（wiggle-subsequence" class="headerlink" title="376.摆动序列（wiggle subsequence)"></a>376.摆动序列（wiggle subsequence)</h2><p>题目链接：</p>
+<ul>
+<li>每个峰值的判断（判断单调区间）</li>
+<li>最右峰值的判断</li>
+<li>时间复杂度 O(n)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wiggleMaxLength</span>(<span class="params">self, nums:<span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        res = <span class="number">1</span></span><br><span class="line">        cuffix = <span class="number">0</span></span><br><span class="line">        prefix = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)-<span class="number">1</span>):</span><br><span class="line">            curfix = nums[i+<span class="number">1</span>] - nums[i]</span><br><span class="line">            <span class="keyword">if</span> curfix * prefix &lt;= <span class="number">0</span> <span class="keyword">and</span> curfix != <span class="number">0</span>:</span><br><span class="line">                res += <span class="number">1</span></span><br><span class="line">                prefix = curfix</span><br><span class="line">        <span class="keyword">return</span> res </span><br></pre></td></tr></table></figure>
+
+<h2 id="53-最大子序和（）"><a href="#53-最大子序和（）" class="headerlink" title="53.最大子序和（）"></a>53.最大子序和（）</h2><p>题目链接：</p>
+<ul>
+<li></li>
+</ul>
 
         </div>
 
