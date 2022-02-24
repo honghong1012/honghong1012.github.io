@@ -9,7 +9,7 @@
     
     <title>
         
-            关于在winter break摆烂的随笔小记1 |
+            攻坚克难之数组和字符串 |
         
         HONG’s
     </title>
@@ -161,7 +161,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">关于在winter break摆烂的随笔小记1</span>
+            <span class="title-hover-animation">攻坚克难之数组和字符串</span>
         </div>
 
         
@@ -180,8 +180,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2021-12-20 19:27:37</span>
-        <span class="mobile">2021-12-20 19:27</span>
+        <span class="pc">2022-02-22 14:52:43</span>
+        <span class="mobile">2022-02-22 14:52</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -189,7 +189,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>&nbsp;
+                        <a href="/categories/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/">刷题笔记</a>&nbsp;
                     </li>
                 
             </ul>
@@ -209,27 +209,22 @@
         
 
         <div class="article-content markdown-body">
-            <p>“突然想起了学生公寓门口的拌饺，吃完一顿要打满六个小时的韭菜味饱嗝。以前想不到吃什么的时候总会买一份拌饺加一份水果捞，拎着回宿舍和朋友一起看剧。让人怀念的还有那个摊位卖的福鼎肉片，大晚上偷偷溜出去踩水之后总会买一份的宵夜，想起来总是很快乐的日子。不想看的曾经，但又想分享的曾经。”  </p>
-<div align="center">
-<img src="https://cdn.jsdelivr.net/gh/honghong1012/image-host@master/IMG_6135.6np7d3fgk2o0.jpg" width="50%" height="50%">
-</div>
+            <h1 id="151-Reverse-Words-in-a-String"><a href="#151-Reverse-Words-in-a-String" class="headerlink" title="151.Reverse Words in a String"></a>151.Reverse Words in a String</h1><p><a class="link"   target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-words-in-a-string/" >https://leetcode-cn.com/problems/reverse-words-in-a-string/<i class="fas fa-external-link-alt"></i></a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverseWords</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">str</span>:</span></span><br><span class="line">        l = s.split()</span><br><span class="line">        n = <span class="built_in">len</span>(l)</span><br><span class="line">        left, right = <span class="number">0</span>, n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            temp = l[left]</span><br><span class="line">            l[left] = l[right]</span><br><span class="line">            l[right] = temp</span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot; &quot;</span>.join(l)</span><br></pre></td></tr></table></figure>
 
-
-<p>本来想在微博上碎碎念的文字，后来突然想起自己刚搭建的秘密基地，也成为了我码字第一个博客的契机。当然了，这种废话文学只能被归类到“随笔”中，那干脆也来写写我winter break中的摆烂一天，好歹也是记录我存在过的证据了。以后我的孙子孙女可以直接摸过来看我的日记咯，还挺有趣的。  </p>
-<p>今天早上是和阿叶约的“芝加哥圣诞集市之行”，一直想去感受一下这边的圣诞氛围，苦于没有车，我和阿叶总是得等到有intercampus的时候，才敢出趟“远门”。去之前倒是很期待在集市里买到可爱的纪念杯，听说上面会印有每年的年份，就蛮有意义。还打算买个我最爱的pretzel和芝士法棍三明治，捧着热红酒慢慢悠悠的逛一圈。  </p>
-<p>然而人们对圣诞的热情还是远超我的想象。有点像市中心“义乌小市场”的圣诞集市，就连进去也要排队，简直是梦回迪士尼四小时玩俩机动游戏的噩梦了。  </p>
-
+<h1 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="35. Search Insert Position"></a>35. Search Insert Position</h1><p><a class="link"   target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/search-insert-position/" >https://leetcode-cn.com/problems/search-insert-position/<i class="fas fa-external-link-alt"></i></a><br>需要好好了解二分查找的原理和结果，别想的太复杂</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">searchInsert</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(nums) - <span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> left &lt;= right:</span><br><span class="line">            mid = (left+right) // <span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> nums[mid] == target:</span><br><span class="line">                <span class="keyword">return</span> mid</span><br><span class="line">            <span class="keyword">elif</span> nums[mid] &gt; target:</span><br><span class="line">                right = mid - <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                left = mid + <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> left</span><br></pre></td></tr></table></figure>
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：关于在winter break摆烂的随笔小记1</li>
+        <li>Post title：攻坚克难之数组和字符串</li>
         <li>Post author：HONG HONG</li>
-        <li>Create time：2021-12-20 19:27:37</li>
+        <li>Create time：2022-02-22 14:52:43</li>
         <li>
-            Post link：https://honghong1012.github.io/2021/12/20/关于在winter-break摆烂的随笔小记1/
+            Post link：https://honghong1012.github.io/2022/02/22/攻坚克难之数组和字符串/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -245,29 +240,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/12/21/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%EF%BC%88greedy-algorithm/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">贪心算法（greedy algorithm)</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2021/12/18/hello-world/"
+                           href="/2022/01/24/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">面试准备</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -461,7 +441,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#151-Reverse-Words-in-a-String"><span class="nav-text">151.Reverse Words in a String</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#35-Search-Insert-Position"><span class="nav-text">35. Search Insert Position</span></a></li></ol>
     </div>
 </div>
         </aside>
