@@ -155,120 +155,122 @@
             <div class="main-content">
 
                 
-                    .home-content-container {
-  background: var(--background-color);
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
 
+                
 
-  .home-article-list {
+                <h3 class="home-article-title">
+                    <a href="/2021/12/27/%E5%B7%B4%E6%96%AF%E5%85%8B%E8%8A%9D%E5%A3%AB%E8%9B%8B%E7%B3%95/">
+                        巴斯克芝士蛋糕
+                    </a>
+                </h3>
 
-    .home-article-item {
-      position: relative;
+                <div class="home-article-content markdown-body">
+                    
+                        材料（此配方可制作6寸巴斯克芝士，8寸则所有用量乘以2）
+奶油奶酪 cream cheese: 350g
+细砂糖 sugar: 75g
+蛋黄 egg yolk: 3个
+全蛋 egg（大): 2个
+淡奶油 heavy whipping cream: 1...
+                    
+                </div>
 
-      keep-container(true, 1.015, 1.015, 28px, 38px);
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Dec 27 2021 22:42:01 GMT-0800">2021-12-27</span></span>
+        
+        
+    </div>
 
-      .top-icon {
-        position: absolute;
-        top: 10px;
-        right: 12px;
-        font-size: 1.2rem;
-        transform: rotate(45deg);
-        color: var(--third-text-color);
+    <a href="/2021/12/27/%E5%B7%B4%E6%96%AF%E5%85%8B%E8%8A%9D%E5%A3%AB%E8%9B%8B%E7%B3%95/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
 
+            </li>
+        
+            <li class="home-article-item">
 
-        +keep-tablet() {
-          font-size: 1.16rem;
-        }
-      }
+                
 
+                <h3 class="home-article-title">
+                    <a href="/2021/12/21/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%EF%BC%88greedy-algorithm/">
+                        贪心算法（greedy algorithm)
+                    </a>
+                </h3>
 
-      .home-article-title {
-        position: relative;
-        font-weight: 600;
-        font-size: 1.4rem;
-        line-height: 1.5;
-        color: var(--second-text-color);
+                <div class="home-article-content markdown-body">
+                    
+                        算法本质选择每一阶段的局部最优，从而达到全局最优化
+算法应用场景
+无固定套路，常识性推导
+想不到相应的反例，可以试试贪心
+贪心算法跑过测试用例即可，或自圆其说  
 
+贪心一般解题步骤
+将原本问题分解为若干子问题
+找出适合的贪心策略
+求出每个子问题最优...
+                    
+                </div>
 
-        +keep-tablet() {
-          font-size: 1.3rem;
-        }
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Dec 21 2021 08:57:40 GMT-0800">2021-12-21</span></span>
+        
+        
+    </div>
 
+    <a href="/2021/12/21/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%EF%BC%88greedy-algorithm/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
 
-        +keep-mobile() {
-          font-size: 1.2rem;
-        }
+            </li>
+        
+            <li class="home-article-item">
 
-        margin: 0;
+                
 
-      }
+                <h3 class="home-article-title">
+                    <a href="/2021/12/18/hello-world/">
+                        Hello World
+                    </a>
+                </h3>
 
+                <div class="home-article-content markdown-body">
+                    
+                        Welcome to my blog! This is my very first post. Actually I’ve been setting up my blog for a long time(even though I often fou...
+                    
+                </div>
 
-      .home-article-content {
-        word-wrap: break-word;
-        text-align: justify;
-        margin: 20px 0;
-        color: var(--default-text-color);
-      }
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Dec 18 2021 09:05:03 GMT-0800">2021-12-18</span></span>
+        
+        
+    </div>
 
+    <a href="/2021/12/18/hello-world/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
 
-      .home-article-meta-info-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.92rem;
-        color: var(--third-text-color);
+            </li>
+        
+    </ul>
 
+    <div class="home-paginator">
+        <div class="paginator">
+    
+        <a class="prev btn"
+           href="/"
+        >Prev</a>
+    
 
-        .home-article-meta-info {
-          letter-spacing: 0.5px;
+    
+</div>
 
-          span {
-            margin-right: 10px;
-
-            &:last-child {
-              margin-right: 0;
-            }
-
-            ul, li {
-              display: inline;
-            }
-          }
-
-          .home-article-category {
-            +keep-mobile() {
-              display: none;
-            }
-          }
-
-          .home-article-tag {
-            +keep-tablet() {
-              display: none;
-            }
-          }
-        }
-
-
-        hr {
-          border: none;
-          flex: 1;
-          height: 1px;
-          background: var(--border-color);
-          margin: 0 10px;
-        }
-
-        a {
-          color: var(--third-text-color);
-
-          &:hover {
-            color: var(--primary-color)
-          }
-        }
-      }
-
-
-    }
-  }
-}
+    </div>
+</div>
 
 
                 
