@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="xxxx">
+    <meta name="author" content="HONG HONG">
+    
+    <title>
+        
+            react |
+        
+        HONG’s
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.jpeg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"honghong1012.github.io","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpeg","favicon":"/images/logo.jpeg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep loving. Keep learning."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                HONG’s
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                LINKS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">LINKS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">react</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.jpeg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">HONG HONG</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2023-04-18 22:46:18</span>
+        <span class="mobile">2023-04-18 22:46</span>
+    </span>
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h1><p>JSX is a XML-like syntax extension to ECMAScript (the acronym stands for JavaScript XML). Basically it just provides syntactic sugar for the React.createElement() function, giving us expressiveness of JavaScript along with HTML like template syntax.</p>
+<h1 id="class-component-function-component"><a href="#class-component-function-component" class="headerlink" title="class component / function component"></a>class component / function component</h1><h2 id="when-to-use"><a href="#when-to-use" class="headerlink" title="when to use"></a>when to use</h2><p>If the component needs state or lifecycle methods then use class component otherwise use function component. However, from React 16.8 with the addition of Hooks, you could use state , lifecycle methods and other features that were only available in class component right in your function component.</p>
+<h1 id="state"><a href="#state" class="headerlink" title="state"></a>state</h1><p>Internal property,that is used to contain data or information about the component. State change will trigger re-render of the component.</p>
+<h1 id="props"><a href="#props" class="headerlink" title="props"></a>props</h1><p>exterior property and is being used for passing data from one component to another. But data with props are being passed in one way from parent to child.</p>
+<h1 id="why-should-we-not-update-the-state-directly"><a href="#why-should-we-not-update-the-state-directly" class="headerlink" title="why should we not update the state directly"></a>why should we not update the state directly</h1><p>If you try to update state directly then it won’t re-render the component.</p>
+<h1 id="purpose-of-callback-function-as-an-argument-of-setState-and-useState"><a href="#purpose-of-callback-function-as-an-argument-of-setState-and-useState" class="headerlink" title="purpose of callback function as an argument of setState() and useState"></a>purpose of callback function as an argument of setState() and useState</h1><p>The callback function is invoked when setState finished and the component gets rendered. Since setState() is asynchronous the callback function is used for any post action.</p>
+<h1 id="What-is-the-difference-between-HTML-and-React-event-handling"><a href="#What-is-the-difference-between-HTML-and-React-event-handling" class="headerlink" title="What is the difference between HTML and React event handling?"></a>What is the difference between HTML and React event handling?</h1><p>In HTML, the event name should be in lowercase:<br><button onclick='activateLasers()'><br>in React<br><button onClick={activateLasers}></p>
+<p>In HTML, you can return false to prevent default behavior:</p>
+<a href='#' onclick='console.log("The link was clicked."); return false;' />
+e.preventDefault()
+in React you must call preventDefault() explicitly:
+
+<p>function handleClick(event) {<br>  event.preventDefault()<br>  console.log(‘The link was clicked.’)<br>}</p>
+<h1 id="synthetic-events"><a href="#synthetic-events" class="headerlink" title="synthetic events"></a>synthetic events</h1><p>SyntheticEvent is a cross-browser wrapper around the browser’s native event. It’s API is same as the browser’s native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.</p>
+<h1 id="key-props-and-benefit"><a href="#key-props-and-benefit" class="headerlink" title="key props and benefit"></a>key props and benefit</h1><p>A key is a special string attribute you should include when creating arrays of elements. Key prop helps React identify which items have changed, are added, or are removed.</p>
+<h1 id="the-use-of-refs"><a href="#the-use-of-refs" class="headerlink" title="the use of refs"></a>the use of refs</h1><p>The ref is used to return a reference to the element. They should be avoided in most cases, however, they can be useful when you need a direct access to the DOM element or an instance of a component.</p>
+<h1 id="Virtual-DOM"><a href="#Virtual-DOM" class="headerlink" title="Virtual DOM"></a>Virtual DOM</h1><p>diffing algorithm<br>The Virtual DOM (VDOM) is an in-memory representation of Real DOM. The representation of a UI is kept in memory and synced with the “real” DOM. It’s a step that happens between the render function being called and the displaying of elements on the screen. This entire process is called reconciliation.</p>
+<h1 id="React-Fiber"><a href="#React-Fiber" class="headerlink" title="React Fiber"></a>React Fiber</h1><p>Fiber is the new reconciliation engine or reimplementation of the core algorithm in React v16. The goal of React Fiber is to increase its suitability for areas like animation, layout, gestures, ability to pause, abort, or reuse work and assign priority to different types of updates; and new concurrency primitives. -&gt; increase performance</p>
+<h1 id="controlled-component-uncontrolled-component"><a href="#controlled-component-uncontrolled-component" class="headerlink" title="controlled component / uncontrolled component"></a>controlled component / uncontrolled component</h1><p>Controlled component, controlled by state or props. Uncontrolled component need ref to access.<br><input value={valueState}, onChange={handleChange}/> -&gt; controlled element<br><input /> -&gt; uncontrolled element</p>
+<h1 id="React-lifecycle"><a href="#React-lifecycle" class="headerlink" title="React lifecycle"></a>React lifecycle</h1><p>In React, the term “lifecycle” refers to the series of methods that a component goes through during its existence. These methods can be categorized into three main phases: mounting, updating, and unmounting.</p>
+<ul>
+<li> mounting phase occurs when a component is first created and added to the DOM. During this phase, the following methods are called in order:</li>
+</ul>
+<p>constructor()<br>render()<br>componentDidMount()</p>
+<ul>
+<li>updating phase occurs when a component’s props or state change, causing it to re-render. During this phase, the following methods are called in order:<br>shouldComponentUpdate()<br>render()<br>componentDidUpdate()</li>
+<li>unmounting phase occurs when a component is removed from the DOM. During this phase, the following method is called:<br>componentWillUnmount()</li>
+</ul>
+<h2 id="different-phases-of-the-component-lifecycle"><a href="#different-phases-of-the-component-lifecycle" class="headerlink" title="different phases of the component lifecycle"></a>different phases of the component lifecycle</h2><h1 id="What-are-Higher-Order-Components-amp-Function-as-Children"><a href="#What-are-Higher-Order-Components-amp-Function-as-Children" class="headerlink" title="What are Higher-Order Components &amp; Function as Children?"></a>What are Higher-Order Components &amp; Function as Children?</h1><p>A higher-order component (HOC) is a function that takes a base component and returns a new component. -&gt;  inject props -&gt; re-use logic<br>Function as Children: render props.children as a function</p>
+<p>Both are for re-use</p>
+<h1 id="What-is-context"><a href="#What-is-context" class="headerlink" title="What is context?"></a>What is context?</h1><p>Context provides a way to pass data through the component tree without having to pass props down manually at every level.<br>const {Provider, Consumer} = React.createContext(defaultValue)<br>useContext</p>
+<h1 id="What-is-children-prop"><a href="#What-is-children-prop" class="headerlink" title="What is children prop?"></a>What is children prop?</h1><h1 id="What-is-reconciliation-similar-to-virtual-dom"><a href="#What-is-reconciliation-similar-to-virtual-dom" class="headerlink" title="What is reconciliation?(similar to virtual dom)"></a>What is reconciliation?(similar to virtual dom)</h1><p>When a component’s props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called reconciliation.</p>
+<h1 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h1><p>React.lazy -&gt; load component as needed. To improve the loading speed -&gt; lazy loading<br>Webpack -&gt; minify / uglify plugin (new trends -&gt; vite.js)<br>(<a class="link"   target="_blank" rel="noopener" href="https://reactjs.org/docs/code-splitting.html" >https://reactjs.org/docs/code-splitting.html<i class="fas fa-external-link-alt"></i></a>)<br>PureComponent &amp; shouldComponentUpdate -&gt; improve rendering performance -&gt; to avoid unnecessary re-render</p>
+<h1 id="What-are-Pure-Components"><a href="#What-are-Pure-Components" class="headerlink" title="What are Pure Components?"></a>What are Pure Components?</h1><p>React.PureComponent is exactly the same as React.Component except that it handles the shouldComponentUpdate() method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won’t compare current props and state to next out of the box. Thus, the component will re-render by default whenever shouldComponentUpdate is called.</p>
+<h1 id="Why-React-uses-className-over-class-attribute"><a href="#Why-React-uses-className-over-class-attribute" class="headerlink" title="Why React uses className over class attribute?"></a>Why React uses className over class attribute?</h1><p>class is a keyword in JavaScript</p>
+<h1 id="What-are-fragments"><a href="#What-are-fragments" class="headerlink" title="What are fragments?"></a>What are fragments?</h1><p>&lt;React.Fragment&gt; &lt;/React.Fragment&gt;<br> &lt;&gt;&lt;/&gt;</p>
+<h1 id="What-are-portals-in-React"><a href="#What-are-portals-in-React" class="headerlink" title="What are portals in React?"></a>What are portals in React?</h1><p>Portal is a recommended way to render children into a DOM node that exists outside the DOM<br><a class="link"   target="_blank" rel="noopener" href="https://reactjs.org/docs/portals.html" >https://reactjs.org/docs/portals.html<i class="fas fa-external-link-alt"></i></a> usually used to implement modal, dialog, popover</p>
+<h1 id="stateless-components-vs-stateful-components"><a href="#stateless-components-vs-stateful-components" class="headerlink" title="stateless components vs stateful components"></a>stateless components vs stateful components</h1><h1 id="How-to-apply-validation-on-props-in-React"><a href="#How-to-apply-validation-on-props-in-React" class="headerlink" title="How to apply validation on props in React?"></a>How to apply validation on props in React?</h1><p>Prop-types<br><a class="link"   target="_blank" rel="noopener" href="https://reactjs.org/docs/typechecking-with-proptypes.html" >https://reactjs.org/docs/typechecking-with-proptypes.html<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="What-are-error-boundaries-in-React-v16"><a href="#What-are-error-boundaries-in-React-v16" class="headerlink" title="What are error boundaries in React v16?"></a>What are error boundaries in React v16?</h1><p>Allow app handle error from UI gracefully<br>Only handle UI error.<br><a class="link"   target="_blank" rel="noopener" href="https://reactjs.org/docs/error-boundaries.html" >https://reactjs.org/docs/error-boundaries.html<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="What-is-SSR-server-side-rendering-why-we-need-it"><a href="#What-is-SSR-server-side-rendering-why-we-need-it" class="headerlink" title="What is SSR server side rendering, why we need it."></a>What is SSR server side rendering, why we need it.</h1><p>Server renders the react application page and sends to client. Good for SEO. Framework Next.js<br>vs CSR -&gt; client side rendering</p>
+<h1 id="What-is-CRA-and-its-benefits"><a href="#What-is-CRA-and-its-benefits" class="headerlink" title="What is CRA and its benefits?"></a>What is CRA and its benefits?</h1><p>The create-react-app CLI tool allows you to quickly create &amp; run React applications with no configuration step.<br>Customization without eject -&gt; react-scripts-rewired library</p>
+<h1 id="What-is-flux"><a href="#What-is-flux" class="headerlink" title="What is flux?"></a>What is flux?</h1><p> It is not a framework or a library but a new kind of architecture that complements React and the concept of Unidirectional Data Flow</p>
+<h1 id="Redux"><a href="#Redux" class="headerlink" title="Redux"></a>Redux</h1><h1 id="What-are-the-core-principles-of-Redux"><a href="#What-are-the-core-principles-of-Redux" class="headerlink" title="What are the core principles of Redux?"></a>What are the core principles of Redux?</h1><p>Single source of truth: The state of your whole application is stored in an object tree within a single store. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.</p>
+<p>State is read-only: The only way to change the state is to emit an action, an object describing what happened. This ensures that neither the views nor the network callbacks will ever write directly to the state.</p>
+<p>Changes are made with pure functions: To specify how the state tree is transformed by actions, you write reducers. Reducers are just pure functions that take the previous state and an action as parameters, and return the next state.</p>
+<h1 id="Explain-Data-flow-of-Redux"><a href="#Explain-Data-flow-of-Redux" class="headerlink" title="Explain Data flow of Redux"></a>Explain Data flow of Redux</h1><p>View -&gt; dispatch action -&gt; trigger reducer -&gt; update store data -&gt; re-render in view</p>
+<h1 id="What-is-the-difference-between-React-context-and-React-Redux-React-state"><a href="#What-is-the-difference-between-React-context-and-React-Redux-React-state" class="headerlink" title="What is the difference between React context and React Redux, React state?"></a>What is the difference between React context and React Redux, React state?</h1><p>You can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for.</p>
+<p>Whereas Redux is much more powerful and provides a large number of features that the Context API doesn’t provide. Also, React Redux uses context internally but it doesn’t expose this fact in the public API.</p>
+<p>State: Some simple state, like input text value, show/hide dropdown.<br>Context: inside a module that needs to pass between components<br>Redux: data that needs to be shared across modules.</p>
+<h1 id="What-is-Redux-middleware"><a href="#What-is-Redux-middleware" class="headerlink" title="What is Redux middleware"></a>What is Redux middleware</h1><p>Middleware provides a way to interact with actions that have been dispatched to the store before they reach the store’s reducer. Examples of different uses for middleware include logging actions, reporting errors, making asynchronous requests, and dispatching new actions.</p>
+<h1 id="How-to-make-AJAX-request-in-Redux"><a href="#How-to-make-AJAX-request-in-Redux" class="headerlink" title="How to make AJAX request in Redux?"></a>How to make AJAX request in Redux?</h1><p>use redux-thunk / redux-saga middleware which allows you to define async actions.</p>
+<h1 id="What-is-the-difference-between-presentational-component-and-container-in-React-Redux"><a href="#What-is-the-difference-between-presentational-component-and-container-in-React-Redux" class="headerlink" title="What is the difference between presentational component and container in React Redux?"></a>What is the difference between presentational component and container in React Redux?</h1><p>Component is a class or function component that describes the presentational part of your application.</p>
+<p>Container is an informal term for a component that is connected to a Redux store. Containers subscribe to Redux state updates and dispatch actions, and they usually don’t render DOM elements; they delegate rendering to presentational child components.</p>
+<h1 id="Hooks"><a href="#Hooks" class="headerlink" title="Hooks"></a>Hooks</h1><p>New api from 16.8<br>allows to have state and simulate lifecycles in functional component.<br>Less and clean Code.<br>Custom reuse-logic</p>
+<h2 id="rules-needed-to-follow-for-hooks"><a href="#rules-needed-to-follow-for-hooks" class="headerlink" title="rules needed to follow for hooks?"></a>rules needed to follow for hooks?</h2><p>Call Hooks only at the top level of your react functions. i.e, You shouldn’t call Hooks inside loops, conditions, or nested functions.<br>This will ensure that Hooks are called in the same order each time a component renders and it preserves the state of Hooks between multiple useState and useEffect calls.<br>Call Hooks from React Functions only. i.e, You shouldn’t call Hooks from regular JavaScript functions.</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：react</li>
+        <li>Post author：HONG HONG</li>
+        <li>Create time：2023-04-18 22:46:18</li>
+        <li>
+            Post link：https://honghong1012.github.io/2023/04/18/react/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2023/04/18/js/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">js</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: '4mUEhR7wvygfHr2BSPXwfKGK-gzGzoHsz',
+                    appKey: 'E5OBGq6OJxgfyWSVAhJf2Lya',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '有任何想法欢迎随时和我交流哦～',
+                    lang: 'en'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'HONG HONG';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2021</span>
+              -
+            
+            2023&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">HONG HONG</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JSX"><span class="nav-text">JSX</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#class-component-function-component"><span class="nav-text">class component &#x2F; function component</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#when-to-use"><span class="nav-text">when to use</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#state"><span class="nav-text">state</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#props"><span class="nav-text">props</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#why-should-we-not-update-the-state-directly"><span class="nav-text">why should we not update the state directly</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#purpose-of-callback-function-as-an-argument-of-setState-and-useState"><span class="nav-text">purpose of callback function as an argument of setState() and useState</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-the-difference-between-HTML-and-React-event-handling"><span class="nav-text">What is the difference between HTML and React event handling?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#synthetic-events"><span class="nav-text">synthetic events</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#key-props-and-benefit"><span class="nav-text">key props and benefit</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#the-use-of-refs"><span class="nav-text">the use of refs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Virtual-DOM"><span class="nav-text">Virtual DOM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Fiber"><span class="nav-text">React Fiber</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#controlled-component-uncontrolled-component"><span class="nav-text">controlled component &#x2F; uncontrolled component</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#React-lifecycle"><span class="nav-text">React lifecycle</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#different-phases-of-the-component-lifecycle"><span class="nav-text">different phases of the component lifecycle</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-Higher-Order-Components-amp-Function-as-Children"><span class="nav-text">What are Higher-Order Components &amp; Function as Children?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-context"><span class="nav-text">What is context?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-children-prop"><span class="nav-text">What is children prop?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-reconciliation-similar-to-virtual-dom"><span class="nav-text">What is reconciliation?(similar to virtual dom)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Performance"><span class="nav-text">Performance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-Pure-Components"><span class="nav-text">What are Pure Components?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Why-React-uses-className-over-class-attribute"><span class="nav-text">Why React uses className over class attribute?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-fragments"><span class="nav-text">What are fragments?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-portals-in-React"><span class="nav-text">What are portals in React?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#stateless-components-vs-stateful-components"><span class="nav-text">stateless components vs stateful components</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-apply-validation-on-props-in-React"><span class="nav-text">How to apply validation on props in React?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-error-boundaries-in-React-v16"><span class="nav-text">What are error boundaries in React v16?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-SSR-server-side-rendering-why-we-need-it"><span class="nav-text">What is SSR server side rendering, why we need it.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-CRA-and-its-benefits"><span class="nav-text">What is CRA and its benefits?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-flux"><span class="nav-text">What is flux?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Redux"><span class="nav-text">Redux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-are-the-core-principles-of-Redux"><span class="nav-text">What are the core principles of Redux?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Explain-Data-flow-of-Redux"><span class="nav-text">Explain Data flow of Redux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-the-difference-between-React-context-and-React-Redux-React-state"><span class="nav-text">What is the difference between React context and React Redux, React state?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-Redux-middleware"><span class="nav-text">What is Redux middleware</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-make-AJAX-request-in-Redux"><span class="nav-text">How to make AJAX request in Redux?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-is-the-difference-between-presentational-component-and-container-in-React-Redux"><span class="nav-text">What is the difference between presentational component and container in React Redux?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hooks"><span class="nav-text">Hooks</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#rules-needed-to-follow-for-hooks"><span class="nav-text">rules needed to follow for hooks?</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
+
+
+
+
+<div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
+    
+</div>
+
+
+
+</body>
+</html>
