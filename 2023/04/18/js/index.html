@@ -225,7 +225,71 @@
 <li>Slower and more memory-intensive</li>
 <li>Method: Lodash library, JSON.parse(JSON.stringify())</li>
 </ul>
-
+<h1 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var / let / const"></a>var / let / const</h1><p>variable can be declared using these keywords</p>
+<h2 id="var"><a href="#var" class="headerlink" title="var"></a>var</h2><ul>
+<li>oldest way to declare</li>
+<li>function scope -&gt; variable is accessible within the function it is defined in, as well as the any nested function -&gt; outside the function becomes a global variable</li>
+<li>re-declared and updated within the same scope</li>
+<li>variable hoisting -&gt; declarations are moved to top</li>
+</ul>
+<h2 id="let-const"><a href="#let-const" class="headerlink" title="let / const"></a>let / const</h2><ul>
+<li>introduced in ES6</li>
+<li>block scope -&gt; block is a section of code surrounded by curly braces(if/else, loop)</li>
+<li>let can be updated but not re-declared within same scope</li>
+<li>const cannot be reassigned or re-declared</li>
+</ul>
+<h1 id="closure"><a href="#closure" class="headerlink" title="closure"></a>closure</h1><p>A closure is an inner function that has access to the outer function’s variables.<br>It has three scope chains: access to its own scope -&gt; outer function’s variables -&gt; global variables</p>
+<h1 id="Event-loop"><a href="#Event-loop" class="headerlink" title="Event loop"></a>Event loop</h1><ul>
+<li>key concept in the JS runtime environment -&gt; enables asynchronous programming. </li>
+<li>In JS, code is executed in a single-threaded environment, which means that only one task can be processed at a time. -&gt;  However, JavaScript also supports non-blocking I/O operations, which allow for asynchronous code execution.</li>
+<li>To manage asynchronous operations, JS uses the event loop. </li>
+<li>The event loop is a continuous process that monitors the call stack and the task queue. Whenever the call stack is empty, the event loop looks at the task queue and adds any pending tasks to the call stack. This way, asynchronous tasks can be executed when they are ready, without blocking the main thread.</li>
+<li>micro(promise callback) &gt; macro(setTimeout/setInterval)</li>
+</ul>
+<h2 id="Basic-workflow"><a href="#Basic-workflow" class="headerlink" title="Basic workflow"></a>Basic workflow</h2><ul>
+<li>When a task is added to the task queue, it is marked as “pending”.</li>
+<li>When the call stack is empty, the event loop checks the task queue for any pending tasks.</li>
+<li>If there is a pending task, it is added to the call stack and executed.</li>
+<li>Once the task is complete, the call stack is empty again and the event loop checks for any new pending tasks.</li>
+</ul>
+<h1 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h1><ul>
+<li>container -&gt; have the result of the future things</li>
+<li>provides cleaner and intuitive way to deal with asynchronous tasks, avoid callback hell</li>
+<li>two states: pending and settled, settled includes fulfilled + rejected</li>
+<li>uses method “then” and “catch” to deal with all kinds of asynchronous operation</li>
+</ul>
+<h1 id="Async-why"><a href="#Async-why" class="headerlink" title="Async / why"></a>Async / why</h1><p>Event loop. We want non-blocking and avoid DOM render conflicting</p>
+<h2 id="async-await-difference-with-Promise"><a href="#async-await-difference-with-Promise" class="headerlink" title="async / await difference with Promise"></a>async / await difference with Promise</h2><p>same thing -&gt; syntax sugar that allows to write async code like sync code.</p>
+<h1 id="“this”-in-js"><a href="#“this”-in-js" class="headerlink" title="“this” in js"></a>“this” in js</h1><p>“this” means the environment object where the function is running.<br>With “Function” keyword:</p>
+<ul>
+<li>“this” in constructor function. -&gt; the function called with “new” -&gt; this refers the instance</li>
+<li>“this” in an object method function -&gt; refers to who call the function (the thing before the “.”)</li>
+<li>“this” in a plain function -&gt; window</li>
+<li>“this” in event handler -&gt; the element fires the event<br>Arrow function<br>“this” points to closest “this” when create the function, it is lexical scope<br>Arrow function cannot be the constructor function<h2 id="bind-apply-call"><a href="#bind-apply-call" class="headerlink" title="bind / apply / call"></a>bind / apply / call</h2>The purpose is to change the “this” referring.</li>
+<li>bind takes one or more arguments, the first would be the new “this” value -&gt; const newFunc = func.bind(antherObj);</li>
+<li>“apply” method calls a function with a specified “this” value and arguments provided as an array. The first argument to the “apply” method is the new “this” value, and the second argument is an array of arguments to be passed to the function. -&gt; apply(anotherObj, [arg1, arg2])</li>
+<li>“call” method is similar to the “apply” method, but the arguments are passed individually rather than as an array. The first argument to the “call” method is the new “this” value, and the remaining arguments are individual arguments to be passed to the function.</li>
+</ul>
+<p> -&gt; call(anotherObj, arg1, arg2)</p>
+<h1 id="Event-bubbling-Event-capturing"><a href="#Event-bubbling-Event-capturing" class="headerlink" title="Event bubbling / Event capturing"></a>Event bubbling / Event capturing</h1><h2 id="bubbling"><a href="#bubbling" class="headerlink" title="bubbling"></a>bubbling</h2><ul>
+<li>mechanism in JS that allows an event to propagate through the DOM hierarchy -&gt; from the innermost element to the outermost element. </li>
+<li>When an event occurs on an element, such as a click or a keypress, the event is first handled by the element itself. Then, the event “bubbles up” to its parent element, and so on, until it reaches the top-level document object.</li>
+<li>Allows us to capture an event on a parent element rather than handling it on every child element individually. This can be useful when working with dynamic HTML content or when we want to minimize the number of event listeners in our code.</li>
+</ul>
+<h2 id="capturing"><a href="#capturing" class="headerlink" title="capturing"></a>capturing</h2><p>Event capturing is another mechanism in JavaScript that allows an event to be captured and handled by a parent element before it reaches the target element. In contrast to event bubbling, event capturing starts from the outermost parent element and propagates towards the target element.</p>
+<h1 id="e-target-e-currentTarget"><a href="#e-target-e-currentTarget" class="headerlink" title="e.target / e.currentTarget"></a>e.target / e.currentTarget</h1><p>e.target: The thing under the mouse (the thing that triggers the event).<br>e.currentTarget is the  element with the added event listener.</p>
+<h1 id="Event-delegation"><a href="#Event-delegation" class="headerlink" title="Event delegation"></a>Event delegation</h1><p>Event Delegation is the method. this method will let you create one event listener to trigger all child elements. Each child element will be targeted by a unique ID.</p>
+<h1 id="JS-prototype"><a href="#JS-prototype" class="headerlink" title="JS prototype"></a>JS prototype</h1><ol>
+<li>Why do we need the “prototype”? To re-use method in the object</li>
+<li>Each function automatically has a “prototype” property. The value of “prototype” is an object.</li>
+<li> Each object(instance) has a “__proto__” property. The “__proto__” refers the “prototype” of its creator(the function). </li>
+<li>You can use a function(constructor) with “new” keyword to create an object(instance). Then the created object’s “__proto__” refers the “prototype” of the function(constructor)</li>
+<li>the object will have a “constructor” property automatically, which refers to the constructor(the function)</li>
+<li>Arrow function cannot be a constructor</li>
+<li>When accessing a property of an object, JS will look at itself first. If no, it will look at the “<strong>proto__”, If still no, it will look at “__proto</strong>.__proto__” until the “__proto__” is null. (the prototype chain)</li>
+</ol>
+<h1 id="Why-put-the-tag-in-the-last-of-HTML-file"><a href="#Why-put-the-tag-in-the-last-of-HTML-file" class="headerlink" title="Why put the tag in the last of HTML file?"></a>Why put the tag in the last of HTML file?</h1><p>Putting the script tag in the last can reduce the delay time, users won’t wait a long time to open the webpage. Because the render direction is from top to bottom.</p>
+<h1 id="IIFE-Immediately-Invoked-Function-Expression"><a href="#IIFE-Immediately-Invoked-Function-Expression" class="headerlink" title="IIFE (Immediately Invoked Function Expression)"></a>IIFE (Immediately Invoked Function Expression)</h1>
         </div>
 
         
@@ -453,7 +517,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-types"><span class="nav-text">Data types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Value-type-Reference-type"><span class="nav-text">Value type &#x2F; Reference type</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Shallow-copy-deep-copy"><span class="nav-text">Shallow copy &#x2F; deep copy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Shallow-copy"><span class="nav-text">Shallow copy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deep-copy"><span class="nav-text">Deep copy</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-types"><span class="nav-text">Data types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Value-type-Reference-type"><span class="nav-text">Value type &#x2F; Reference type</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Shallow-copy-deep-copy"><span class="nav-text">Shallow copy &#x2F; deep copy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Shallow-copy"><span class="nav-text">Shallow copy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deep-copy"><span class="nav-text">Deep copy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#var-let-const"><span class="nav-text">var &#x2F; let &#x2F; const</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#var"><span class="nav-text">var</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let-const"><span class="nav-text">let &#x2F; const</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#closure"><span class="nav-text">closure</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Event-loop"><span class="nav-text">Event loop</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-workflow"><span class="nav-text">Basic workflow</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Promise"><span class="nav-text">Promise</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Async-why"><span class="nav-text">Async &#x2F; why</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#async-await-difference-with-Promise"><span class="nav-text">async &#x2F; await difference with Promise</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%9Cthis%E2%80%9D-in-js"><span class="nav-text">“this” in js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#bind-apply-call"><span class="nav-text">bind &#x2F; apply &#x2F; call</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Event-bubbling-Event-capturing"><span class="nav-text">Event bubbling &#x2F; Event capturing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#bubbling"><span class="nav-text">bubbling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#capturing"><span class="nav-text">capturing</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#e-target-e-currentTarget"><span class="nav-text">e.target &#x2F; e.currentTarget</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Event-delegation"><span class="nav-text">Event delegation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JS-prototype"><span class="nav-text">JS prototype</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Why-put-the-tag-in-the-last-of-HTML-file"><span class="nav-text">Why put the tag in the last of HTML file?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IIFE-Immediately-Invoked-Function-Expression"><span class="nav-text">IIFE (Immediately Invoked Function Expression)</span></a></li></ol>
     </div>
 </div>
         </aside>
