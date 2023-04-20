@@ -265,7 +265,11 @@
 <li>“this” in constructor function. -&gt; the function called with “new” -&gt; this refers the instance</li>
 <li>“this” in an object method function -&gt; refers to who call the function (the thing before the “.”)</li>
 <li>“this” in a plain function -&gt; window</li>
-<li>“this” in event handler -&gt; the element fires the event<br>Arrow function<br>“this” points to closest “this” when create the function, it is lexical scope<br>Arrow function cannot be the constructor function<h2 id="bind-apply-call"><a href="#bind-apply-call" class="headerlink" title="bind / apply / call"></a>bind / apply / call</h2>The purpose is to change the “this” referring.</li>
+<li>“this” in event handler -&gt; the element fires the event</li>
+</ul>
+<p>Arrow function<br>“this” points to closest “this” when create the function, it is lexical scope<br>Arrow function cannot be the constructor function</p>
+<h2 id="bind-apply-call"><a href="#bind-apply-call" class="headerlink" title="bind / apply / call"></a>bind / apply / call</h2><p>The purpose is to change the “this” referring.</p>
+<ul>
 <li>bind takes one or more arguments, the first would be the new “this” value -&gt; const newFunc = func.bind(antherObj);</li>
 <li>“apply” method calls a function with a specified “this” value and arguments provided as an array. The first argument to the “apply” method is the new “this” value, and the second argument is an array of arguments to be passed to the function. -&gt; apply(anotherObj, [arg1, arg2])</li>
 <li>“call” method is similar to the “apply” method, but the arguments are passed individually rather than as an array. The first argument to the “call” method is the new “this” value, and the remaining arguments are individual arguments to be passed to the function.</li>

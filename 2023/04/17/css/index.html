@@ -205,11 +205,11 @@
 <li>border-box -&gt; includes content padding border but without margin</li>
 </ol>
 <h1 id="HTML5-new-feature"><a href="#HTML5-new-feature" class="headerlink" title="HTML5 new feature"></a>HTML5 new feature</h1><ol>
-<li>local storage and session storage</li>
+<li>local storage and session storage -&gt; allow web pages to store data on the user’s device.</li>
 <li>improvements in forms, some attributes in input fields like placeholders/emails</li>
-<li>semantic tags</li>
-<li>audio and video support tags</li>
-<li>web workers</li>
+<li>semantic tags -&gt; provide more descriptive information to the search engines and web crawlers.</li>
+<li>audio and video support tags -&gt; without plugins</li>
+<li>web workers -&gt; allow for the execution of JavaScript code in the background, freeing up the main thread for other tasks.</li>
 </ol>
 <h1 id="local-storage-session-storage-cookies"><a href="#local-storage-session-storage-cookies" class="headerlink" title="local storage / session storage / cookies"></a>local storage / session storage / cookies</h1><p>all mechanism to store data on client side</p>
 <h2 id="cookies-gt-text-files"><a href="#cookies-gt-text-files" class="headerlink" title="cookies -&gt; text files"></a>cookies -&gt; text files</h2><ul>
@@ -231,7 +231,7 @@
 <h1 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h1><p>property to decide the stacking order -&gt; only works for positioned elements</p>
 <h1 id="visibility-hidden-display-none"><a href="#visibility-hidden-display-none" class="headerlink" title="visibility: hidden / display: none"></a>visibility: hidden / display: none</h1><p>visibility: hidden;<br>hides an element from view, but the element still takes up space on the web page. The element is not visible, but its layout and size are still preserved, so other elements on the page are positioned as if it were still visible.</p>
 <p>display: none; completely removes an element from the web page, including its layout and size.</p>
-<h1 id="px-em-rem-vh-vh"><a href="#px-em-rem-vh-vh" class="headerlink" title="px / em / rem / vh / vh / %"></a>px / em / rem / vh / vh / %</h1><p>Px, em, rem, vh, vw, and % are all units of measurement in CSS</p>
+<h1 id="px-em-rem-vh-vw"><a href="#px-em-rem-vh-vw" class="headerlink" title="px / em / rem / vh vw / %"></a>px / em / rem / vh vw / %</h1><p>Px, em, rem, vh, vw, and % are all units of measurement in CSS</p>
 <ul>
 <li>Px (pixels) -&gt; absolute unit of measurement -&gt; a single dot on a screen. It’s commonly used for precise measurements and when creating fixed-width layouts.</li>
 <li>Em -&gt; relative unit -&gt; based on the font size of the parent element.</li>
@@ -239,22 +239,68 @@
 <li>Vh (viewport height) and vw (viewport width) -&gt; relative units of measurement -&gt; based on the height and width of the browser viewport, respectively. </li>
 <li>% (percentages) -&gt; relative unit -&gt; based on the size of the parent element.</li>
 </ul>
-<h1 id="Flex-grid"><a href="#Flex-grid" class="headerlink" title="Flex / grid"></a>Flex / grid</h1><h1 id="Block-Inline-inline-block"><a href="#Block-Inline-inline-block" class="headerlink" title="Block / Inline / inline-block"></a>Block / Inline / inline-block</h1><p>block</p>
+<h1 id="Flex-grid"><a href="#Flex-grid" class="headerlink" title="Flex / grid"></a>Flex / grid</h1><ul>
+<li>Axis: Flexbox is designed for one-dimensional layouts, either in a row or a column, while CSS Grid is designed for two-dimensional layouts with rows and columns.</li>
+<li>Item placement: Flexbox provides a way to align and distribute items along the main axis and cross axis, while CSS Grid allows for more fine-grained placement of items in a grid, with control over row and column placement, spanning, and alignment.</li>
+<li>Browser support: CSS Grid is supported by most modern browsers, including all major desktop and mobile browsers. Flexbox has wider support, but some older browsers may not support all of its features.</li>
+</ul>
+<p>When to choose Flexbox:<br>For simpler layouts that only require one-dimensional alignment of items, such as navigation menus, card layouts, or simple lists.</p>
+<p>When to choose grid:<br>For more complex layouts that require precise placement of items in rows and columns, such as magazine-style layouts, image galleries, or dashboard designs.</p>
+<h1 id="Block-Inline-inline-block"><a href="#Block-Inline-inline-block" class="headerlink" title="Block / Inline / inline-block"></a>Block / Inline / inline-block</h1><p>block</p>
 <ul>
 <li>respect all of those</li>
 <li>force a line break after the block element</li>
-<li>breaks the flow<br>inline:</li>
+<li>breaks the flow</li>
+</ul>
+<p>inline:</p>
+<ul>
 <li>respect left &amp; right margins and padding, but not top &amp; bottom</li>
 <li>cannot have a width and height set</li>
 <li>margin and padding will push other elements horizontally not vertically</li>
 <li>allow other elements to sit to their left and right.</li>
-<li>elements do not break the flow<br>inline-block:</li>
+<li>elements do not break the flow</li>
+</ul>
+<p>inline-block:</p>
+<ul>
 <li>allow other elements to sit to their left and right</li>
 <li>respect top &amp; bottom margins and padding</li>
 <li>respect height and width</li>
 </ul>
-<h1 id="pseudo-elements-pseudo-class"><a href="#pseudo-elements-pseudo-class" class="headerlink" title="pseudo-elements / pseudo-class"></a>pseudo-elements / pseudo-class</h1><h1 id="css-pre-processor"><a href="#css-pre-processor" class="headerlink" title="css pre-processor"></a>css pre-processor</h1><h1 id="Semantic-tags-importance"><a href="#Semantic-tags-importance" class="headerlink" title="Semantic tags / importance"></a>Semantic tags / importance</h1><h1 id="specificity"><a href="#specificity" class="headerlink" title="specificity"></a>specificity</h1><h1 id="Responsive-design"><a href="#Responsive-design" class="headerlink" title="Responsive design"></a>Responsive design</h1><p>use @media to query the user’s device width or height to override the styles</p>
-<h1 id="Mobile-first-design"><a href="#Mobile-first-design" class="headerlink" title="Mobile first design"></a>Mobile first design</h1>
+<h1 id="pseudo-elements-pseudo-class"><a href="#pseudo-elements-pseudo-class" class="headerlink" title="pseudo-elements / pseudo-class"></a>pseudo-elements / pseudo-class</h1><h1 id="css-pre-processor"><a href="#css-pre-processor" class="headerlink" title="css pre-processor"></a>css pre-processor</h1><p>A CSS pre-processor is a tool that extends the functionality of CSS by adding programming-like constructs such as variables, mixins, functions, and conditionals</p>
+<p>SASS (SCSS)<br>LESS<br>Stylus<br>PostCSS</p>
+<h1 id="resetting-normalizing"><a href="#resetting-normalizing" class="headerlink" title="resetting / normalizing"></a>resetting / normalizing</h1><p>Resetting - Resetting is meant to strip all default browser styling on elements. For e.g. margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.</p>
+<p>Normalizing - Normalizing preserves useful default styles rather than “unstyling” everything. It also corrects bugs for common browser dependencies.</p>
+<h1 id="Semantic-tags-importance"><a href="#Semantic-tags-importance" class="headerlink" title="Semantic tags / importance"></a>Semantic tags / importance</h1><ul>
+<li>Search Engine Optimization, accessibility, repurposing, light code.</li>
+<li>Many visually impaired person rely on browser speech and semantic tag helps to interpret page content clearly.<br>Search engine needs to understand page content to rank and semantic tag helps.</li>
+<li>semantic code aids accessibility. Specially, many people whose eyes are not good rely on speech browsers to read pages to them. These programs cannot interpret pages very well unless they are clearly explained.</li>
+<li>Help Search engines to better understand pages. Search engine need to understand what your content is about when rank you properly on search engines. Semantic code tends to improve your placement on search engines, as it is easier for the “search engine spiders” to understand.</li>
+<li>It’s easier to read and edit, which saves time and money during maintenance.</li>
+</ul>
+<h1 id="specificity"><a href="#specificity" class="headerlink" title="specificity"></a>specificity</h1><p>In CSS, specificity is a way of determining which style rules should be applied to an element when multiple rules could apply to the same element. </p>
+<p>It is used to resolve conflicts between different style rules that target the same element, by giving priority to the most specific rule.</p>
+<p>Specificity is calculated using a system of values assigned to different parts of a CSS selector. The selector with the highest specificity will override any conflicting rules with lower specificity.</p>
+<p>The specificity values are calculated as follows:</p>
+<p>ID selectors: 100<br>Class selectors, attribute selectors, and pseudo-classes: 10<br>Type selectors and pseudo-elements: 1<br>Universal selector (*), combinators (+, &gt;, ~), and the negation pseudo-class (:not()) have no specificity value.<br>To calculate the specificity of a selector, you add up the specificity values of each of its parts. For example, the selector “body .wrapper div#content p” would have a specificity of 111 (1 for the type selector p, 10 for the ID selector #content, 10 for the class selector .wrapper, and 100 for the type selector div inside the ID selector).</p>
+<p>When multiple rules have the same specificity, the last one declared in the stylesheet takes precedence.</p>
+<h1 id="What-happens-when-DOCTYPE-is-not-given"><a href="#What-happens-when-DOCTYPE-is-not-given" class="headerlink" title="What happens when DOCTYPE is not given?"></a>What happens when DOCTYPE is not given?</h1><p>The web page is rendered in quirks mode. The web browsers engines use quirks mode to support older browsers which does not follow the W3C spec.</p>
+<p>In quirks mode CSS class and id names are case insensitive. In standards mode they are case sensitive.</p>
+<h1 id="What-kind-of-things-must-you-be-wary-of-when-design-or-developing-for-multilingual-sites"><a href="#What-kind-of-things-must-you-be-wary-of-when-design-or-developing-for-multilingual-sites" class="headerlink" title="What kind of things must you be wary of when design or developing for multilingual sites?"></a>What kind of things must you be wary of when design or developing for multilingual sites?</h1><p>Use lang attribute in your HTML.</p>
+<h1 id="meta-tag"><a href="#meta-tag" class="headerlink" title="meta tag"></a>meta tag</h1><p>SEO information</p>
+<p>Embed css<br>Inline<br>Style tag<br>Link<br>@import in css file</p>
+<h1 id="What-does-a-DOCTYPE-do"><a href="#What-does-a-DOCTYPE-do" class="headerlink" title="What does a DOCTYPE do?"></a>What does a DOCTYPE do?</h1><p>DOCTYPE is an abbreviation for DOCument TYPE.<br>A DOCTYPE is always associated to a DTD for Document Type Definition.</p>
+<p>A DTD defines how documents of a certain type should be structured (i.e. a button can contain a span but not a div), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD).</p>
+<p>For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects.<br>Once a user agent has recognized a correct DOCTYPE, it will trigger the no-quirks mode matching this DOCTYPE for reading the document.<br>If a user agent doesn’t recognize a correct DOCTYPE, it will trigger the quirks mode.</p>
+<p>The DOCTYPE declaration for the HTML5 standards is <!DOCTYPE html>.</p>
+<p>it controls whether the browsers uses “standards” or “quirks” mode to render the document.</p>
+<h1 id="alt"><a href="#alt" class="headerlink" title="alt"></a>alt</h1><p>The alt attribute provides alternative information for an image if a user cannot view it. The alt attribute should be used to describe any images except those which only serve a decorative purposes, in which case it should be left empty.</p>
+<h1 id="and"><a href="#and" class="headerlink" title=" and "></a><b> and <strong></h1><p>The <b> tag is a presentational tag that simply makes text bold. </p>
+<p>The <strong> tag, on the other hand, is a semantic tag that is used to indicate that the enclosed text is of particular importance or significance.</p>
+<p><b> should be used for presentational purposes, such as making text bold for aesthetic reasons, while <strong> should be used to indicate the importance or significance of text for semantic and accessibility purposes.</p>
+<h1 id="Responsive-design"><a href="#Responsive-design" class="headerlink" title="Responsive design"></a>Responsive design</h1><p>use @media to query the user’s device width or height to override the styles</p>
+<h1 id="Mobile-first-design"><a href="#Mobile-first-design" class="headerlink" title="Mobile first design"></a>Mobile first design</h1><p>Mobile first design is an approach to web design that prioritizes the design and development of the mobile version of a website or application before creating the desktop version. This means that designers and developers focus on designing for smaller screens first, and then gradually add more complex features and layout elements as the screen size increases.</p>
+<p>The mobile first approach is driven by the increasing use of mobile devices to access the internet and the need for websites and applications to be optimized for smaller screens.</p>
+
         </div>
 
         
@@ -497,7 +543,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Box-model"><span class="nav-text">Box model</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Box-sizing"><span class="nav-text">Box-sizing</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5-new-feature"><span class="nav-text">HTML5 new feature</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#local-storage-session-storage-cookies"><span class="nav-text">local storage &#x2F; session storage &#x2F; cookies</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cookies-gt-text-files"><span class="nav-text">cookies -&gt; text files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#local-storage-and-session-storage"><span class="nav-text">local storage and session storage</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-relative-absolute-fixed-sticky-position"><span class="nav-text">Static &#x2F; relative &#x2F; absolute &#x2F; fixed &#x2F; sticky position</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#z-index"><span class="nav-text">z-index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#visibility-hidden-display-none"><span class="nav-text">visibility: hidden &#x2F; display: none</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#px-em-rem-vh-vh"><span class="nav-text">px &#x2F; em &#x2F; rem &#x2F; vh &#x2F; vh &#x2F; %</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Flex-grid"><span class="nav-text">Flex &#x2F; grid</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Inline-inline-block"><span class="nav-text">Block &#x2F; Inline &#x2F; inline-block</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pseudo-elements-pseudo-class"><span class="nav-text">pseudo-elements &#x2F; pseudo-class</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css-pre-processor"><span class="nav-text">css pre-processor</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantic-tags-importance"><span class="nav-text">Semantic tags &#x2F; importance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#specificity"><span class="nav-text">specificity</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Responsive-design"><span class="nav-text">Responsive design</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mobile-first-design"><span class="nav-text">Mobile first design</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Box-model"><span class="nav-text">Box model</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Box-sizing"><span class="nav-text">Box-sizing</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5-new-feature"><span class="nav-text">HTML5 new feature</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#local-storage-session-storage-cookies"><span class="nav-text">local storage &#x2F; session storage &#x2F; cookies</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cookies-gt-text-files"><span class="nav-text">cookies -&gt; text files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#local-storage-and-session-storage"><span class="nav-text">local storage and session storage</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-relative-absolute-fixed-sticky-position"><span class="nav-text">Static &#x2F; relative &#x2F; absolute &#x2F; fixed &#x2F; sticky position</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#z-index"><span class="nav-text">z-index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#visibility-hidden-display-none"><span class="nav-text">visibility: hidden &#x2F; display: none</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#px-em-rem-vh-vw"><span class="nav-text">px &#x2F; em &#x2F; rem &#x2F; vh vw &#x2F; %</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Flex-grid"><span class="nav-text">Flex &#x2F; grid</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Inline-inline-block"><span class="nav-text">Block &#x2F; Inline &#x2F; inline-block</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pseudo-elements-pseudo-class"><span class="nav-text">pseudo-elements &#x2F; pseudo-class</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css-pre-processor"><span class="nav-text">css pre-processor</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#resetting-normalizing"><span class="nav-text">resetting &#x2F; normalizing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantic-tags-importance"><span class="nav-text">Semantic tags &#x2F; importance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#specificity"><span class="nav-text">specificity</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-happens-when-DOCTYPE-is-not-given"><span class="nav-text">What happens when DOCTYPE is not given?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-kind-of-things-must-you-be-wary-of-when-design-or-developing-for-multilingual-sites"><span class="nav-text">What kind of things must you be wary of when design or developing for multilingual sites?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#meta-tag"><span class="nav-text">meta tag</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#What-does-a-DOCTYPE-do"><span class="nav-text">What does a DOCTYPE do?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#alt"><span class="nav-text">alt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#and"><span class="nav-text"> and </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Responsive-design"><span class="nav-text">Responsive design</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mobile-first-design"><span class="nav-text">Mobile first design</span></a></li></ol>
     </div>
 </div>
         </aside>
